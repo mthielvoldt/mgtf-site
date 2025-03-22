@@ -5,29 +5,29 @@ title: How I Build Momentum
 # {{$frontmatter.title}}
 
 ## Make Firmware Accessible
-Firmware is intrinsically more of a black box than many other technologies.  People often feel locked out, afraid to break things, and unsure of how to engage.  Here's how I make things clear.
+Firmware intrinsically has a black-box problem.  Users often feel locked out, afraid to break things, and unsure of how to engage.  Here's how I make things clear.
 
 - I provide GUIs that clue the available commands and make data visible.
 - I deliver Draw.io diagrams to convey architecture.
 - I adjust explanations to different backgrounds and learning preferences.
 - I co-pilot alongside you for hand-offs.  You should feel in-control.
 
-## Maintain Functionality with Tests
-Without tests, there's a ceiling on the size and complexity a project can reach, and it's no fun to approach that ceiling.  On the other hand, automated tests take effort to write and maintain.  What's important is using techniques appropriate for the situation.
+## Maintain Momentum with Automated Tests
+Without tests, there is a ceiling on the size and complexity a firmware project can reach.  Several vicious cycles erode productivity, and the problem is worse the more complex the project.
+
+The antidote is automated testing, but this is more challenging for firmware than for higher level software because hardware details tend to diffuse into business logic, marrying the code to the hardware they're written for, which often has few if any provisions for tests.  Through research and struggle, I have developed an embedded testing toolkit and skill-set to meet this challenge.
 
 ### End to End
-End-to-End tests support product use-cases, including engineering and manufacture use cases.  My favorite solution is to deliver the GUI mentioned above **as a web page**, and write tests in [Playwright][1].  Testing this way covers the UI, so we can release a full solution with confidence. 
+End-to-End tests defend the product's intended functions, including those functions used by internal "customers" in engineering and manufacturing.  I prefer to deliver the GUI mentioned above **as a web page**, and write tests in [Playwright][1].  This way, tests cover the UI, delivering true end-to-end coverage. 
 
 ### Integration Tests
-I recommend forgoing this level of testing until after the architecture is relatively settled.  It's difficult to get good return-on-investment from integration tests before that.  One exception is: if simulation is planned for the project, some simulation platforms can support integration tests.  Such a setup could partially validate changes to feedback control code without risking hardware.
+There are many options for integration tests, ranging from tests run in simulated environments, to tests run on production or production-like hardware.  The right choices here depend on the project.
 
 ### Unit Tests
-Unit tests are great for proving a code unit does the right things.  I think there's a little too much emphasis on these in some circles, but they certainly give a great ROI for corner cases.  I like [Unity][2] for embedded projects.
+Unit tests are the foundation of testing, and they are as much about encouraging good architecture as about catching bugs before they're bugs.  They run off-target, like on a developer's laptop or a CI server, and as such, they don't cover production hardware details.  I practice Test-Driven Development (TDD) so my code is born with tests.
 
 ## Hardware-Friendly Approach
-Simulation can be a powerful accelerant for progress, but ideas actually get proven and come to life on hardware.  I've also experienced how precious working prototype hardware can be.  I have come to understand this duality as meaning: test, but test carefully.  Power systems (motor controllers, inverters, etc.) are the easiest to damage, and often in shortest supply.  When hardware is scarce, I challenge myself not to damage hardware more than once for the same reason.
-
-To succeed in this, I prioritize creating and validating hardware protection code and operating procedures before starting other testing.  Sometimes a failure gets past my safeguards, so in tandem with writing protections, I also consider a data-capture strategy so if or when a new failure mode crops up, I learn enough about it to improve protections and prevent damage the next time.
+Simulation can be a powerful accelerant for progress, but ideas actually get proven on hardware.  Unfortunately, hardware can be precious and scarce.  When working with hardware that is both fragile and scarce, (often the case with power systems) I write and validate hardware protection code and operating procedures before expanding my hardware-testing focus.  Sometimes a failure gets past my safeguards, so in tandem with writing protections, I also consider a data-capture strategy so if or when a new failure mode crops up, I learn enough about it to improve protections and prevent damage the next time.
 
 
 ## Phases of a Typical Project
