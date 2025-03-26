@@ -7,8 +7,8 @@ hero:
   text: "Your Project Accelerating"
   tagline: Let's talk requirements today
   image:
-    src: /images/logo6-256.png
-    alt: VitePress
+    src: /logo6-256.png
+    alt: MGT Firmware
   # Actions are clickable. 
   actions:
     - theme: brand
