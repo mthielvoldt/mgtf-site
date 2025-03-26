@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "MGT Firmware",
   description: "Accelerate your embedded project",
+  head: [['link', { rel: 'icon', href: '/logo6-32.png' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

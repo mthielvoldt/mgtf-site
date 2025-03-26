@@ -6,6 +6,9 @@ hero:
   name: "MGT Firmware"
   text: "Your Project Accelerating"
   tagline: Let's talk requirements today
+  image:
+    src: /images/logo6-256.png
+    alt: VitePress
   # Actions are clickable. 
   actions:
     - theme: brand
