@@ -10,7 +10,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Accelerants', link: 'accelerants/firment' },
-      { text: 'About Mike', link: 'https://mthielvoldt.github.io'}
+      { text: 'About Mike', link: 'https://mthielvoldt.github.io'},
+      { text: 'Contact', link: '/contact' }
     ],
 
     sidebar: {
