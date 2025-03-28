@@ -22,11 +22,11 @@ hero:
       link: /services/capabilities
 
 features:
-  - title: Facilitate access with Web-UIs
-    details: Websites give users <em>and</em> developers great experiences.  Let's build interfaces there, and get our users involved.
-  - title: Write the most meaningful tests first
-    details: At a project's beginning, we figure out what the product should do.  Let's reinforce that process by writing our first tests for that core functionality, and build from there.
-  - title: Get our hands dirty
-    details: Simulation is great, but it only takes you so far.  Let's equip ourselves for testing on real hardware, without breaking it.
+  - title: Facilitate Access with Web-UIs
+    details: Websites give users <em>and</em> developers great experiences.  Let's build interfaces there, and serve our early users better.
+  - title: Master Tests for Lasting Success
+    details: Writing automated tests is especially tricky in embedded systems - there are pitfalls that can make tests more cost than benefit.  A focus on testable architectures is the secret sauce.
+  - title: Be Friends with the Hardware
+    details: Simulation is great, but it only takes you so far.  Let's go boldly into hardware testing with robust protections and data-capture tools.
 ---
 

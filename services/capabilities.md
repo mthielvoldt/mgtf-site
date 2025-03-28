@@ -3,19 +3,6 @@ title: My Capabilities
 ---
 # {{$frontmatter.title}}
 
-### Motors and Power Conversion
-Generally, controlling power electronics is my specialty, whether that be directed at:
-- Motors
-- DC converters
-- Inverters
-- Architectural Lighting
-- Spark Ignition
-
-At Gradient, I worked on a permanent magnet synchronous motor (PMSM) drive, evaluating codebases, tuning, validating and debugging.  
-
-At Lunar I worked on a 10kW grid-tied inverter, developing core controls and monitoring functions as well as interfaces for meeting grid-connection standards. 
-
-Various personal projects have involved motor speed/torque control and high voltage and/or high current sub-circuits.
 
 | Rating | Meaning |
 | --- | --- |
@@ -37,14 +24,20 @@ Various personal projects have involved motor speed/torque control and high volt
 | Git | :star::star::star: |
 | Code reviews | :star::star: |
 
-### Testing Frameworks
-| Framework | Proficiency |
+### Build Systems and CI
+| Tool | Proficiency |
 | --- | --- |
+| CMake | :star::star: |
+| Github actions | :star: |
+
+### Testing Tools
+| Tool | Proficiency |
+| --- | --- |
+| CppUTest | :star::star: |
+| Unity | :star::star: |
 | Playwright | :star: |
 | Vitest  | :star: |
 | Pytest | :star: |
-| unity | :star: |
-| Github actions | :star: |
 
 ### Circuit Design
 | Tool | Proficiency |
@@ -55,3 +48,17 @@ Various personal projects have involved motor speed/torque control and high volt
 
 ### About C++
 I don't list C++ as a language I'm proficient with because most of my jobs used pure C as a policy to promote awareness of resource usage. Accordingly, my experience with the features from CPP11 and later is limited.  I would be more than willing to learn modern <nobr>C++</nobr> features for your project.
+
+### Power Conversion
+Generally, controlling power electronics is my specialty, whether that be directed at:
+- Motors
+- DC converters
+- Inverters
+- Architectural Lighting
+- Spark Ignition
+
+At Gradient, I worked on a permanent magnet synchronous motor (PMSM) drive, evaluating codebases, tuning, validating and debugging.  
+
+At Lunar I worked on a 10kW grid-tied inverter, developing core controls and monitoring functions as well as interfaces for meeting grid-connection standards. 
+
+Various personal projects have involved motor speed/torque control and high voltage and/or high current sub-circuits.

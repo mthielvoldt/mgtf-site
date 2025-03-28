@@ -9,7 +9,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: 'examples/firment' }
+      { text: 'Accelerants', link: 'accelerants/firment' },
+      { text: 'About Mike', link: 'https://mthielvoldt.github.io'}
     ],
 
     sidebar: {
@@ -22,12 +23,12 @@ export default defineConfig({
           ]
         }
       ],
-      '/examples/': [
+      '/accelerants/': [
         {
-          text: 'Examples',
+          text: 'Accelerants',
           items: [
-            { text: 'Firmware Web-UI', link: 'examples/firment' },
-            { text: 'Secure Bootloader', link: 'examples/mgt-boot' }
+            { text: 'Firmware Web-UI', link: 'accelerants/firment' },
+            { text: 'Secure Bootloader', link: 'accelerants/mgt-boot' }
           ]
         }
       ]
