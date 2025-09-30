@@ -20,6 +20,9 @@ hero:
     - theme: alt
       text: My Capabilities
       link: /services/capabilities
+    - theme: brand
+      text: Go To Demo!
+      link: https://mthielvolt.github.io/motor-demo-1/eng/
 
 features:
   - title: Facilitate Access with Web-UIs
