@@ -26,10 +26,10 @@ hero:
 
 features:
   - title: Facilitate Access with Web-UIs
-    details: Websites give users <em>and</em> developers great experiences.  Let's build interfaces there, and serve our early users better.
+    details: Websites give users <em>and</em> developers great experiences.  Let's build interfaces there.
   - title: Master Tests for Lasting Success
-    details: Writing automated tests is especially tricky in embedded systems - there are pitfalls that can make tests more cost than benefit.  A focus on testable architectures is the secret sauce.
-  - title: Be Friends with the Hardware
-    details: Simulation is great, but it only takes you so far.  Let's go boldly into hardware testing with robust protections and data-capture tools.
+    details: Writing automated tests is essential, but the pitfalls of testing embedded systems can produce more cost than benefit.  Keeping hardware details corralled is the key.
+  - title: Play Nice with the Hardware
+    details: Simulation only takes you so far.  On-Hardware testing with robust protections and data-capture tools yields real answers.
 ---
 
